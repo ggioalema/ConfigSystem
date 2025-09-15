@@ -202,10 +202,11 @@ bindsym $mod+r mode "resize"
 #custom menu for poweroff button
 bindsym XF86PowerOff exec --no-startup-id ~/.local/bin/powermenu.sh
 
+#tasto custom in alto a sinistra
+bindsym XF86Tools exec --no-startup-id ~/ComandiUser/Utili/Fart.sh
 
 #no bordi con titolo
 for_window [class=".*"] border pixel 2
-
 
 #barra figa
 # Tasto per toggle della polybar (usa Mod+b come esempio)
@@ -220,7 +221,6 @@ bindsym $mod+Shift+s exec --no-startup-id spotify
 
 #chrome
 bindsym $mod+Shift+g exec --no-startup-id google-chrome 
-
 
 # Background
 exec --no-startup-id feh --bg-scale ~/Pictures/Sfondo
