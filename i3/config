@@ -202,8 +202,7 @@ bindsym $mod+r mode "resize"
 ###
 
 #custom menu for poweroff button
-bindsym XF86PowerOff exec --no-startup-id ~/.local/bin/powermenu.sh
-
+bindsym XF86PowerOff exec --no-startup-id ~/.config/i3/scripts/powermenu.sh
 #tasto custom in alto a sinistra
 bindsym XF86Tools exec --no-startup-id ~/ComandiUser/Utili/Fart.sh
 
@@ -240,5 +239,6 @@ assign [class="Code"] 3
 
 # activate starting apps 
 exec --no-startup-id google-chrome
-exec --no-startup-id i3-sensible-terminal -e bash -ic "neofetch; exec bash"
+#exec --no-startup-id i3-sensible-terminal -e bash -ic "neofetch; exec bash"
+exec --no-startup-id kitty -e bash -ic "neofetch; exec bash"
 

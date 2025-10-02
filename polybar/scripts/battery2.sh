@@ -10,6 +10,10 @@ if [ "$status" = "Charging" ]; then
     output="AC $capacity%"
 elif [ "$status" = "Discharging" ]; then
     output="BAT $capacity%"
+    if [ "$capacity" -le 10 ]; then
+        output="⚠ $capacity%"
+        notify-send -u critical "Battery low" "Only $capacity% remaining!" -i battery-caution
+    fi
 else
     output="FULL"
 fi

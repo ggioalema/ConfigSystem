@@ -1,0 +1,12 @@
+# Ignora tutto
+/*
+
+# File che non vanno ignorati
+!.git/
+!.gitignore
+!rofi/
+!polybar/
+!i3/
+!neofetch/
+!kitty/
+!bashrc

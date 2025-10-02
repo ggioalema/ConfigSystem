@@ -76,7 +76,7 @@ unset color_prompt force_color_prompt
 #     ;;
 # esac
 
-TERM=xterm-256color
+#TERM=xterm-256color
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -151,4 +151,4 @@ export PATH=$PATH:/home/ggioalema/ComandiUser/
 #vari alias personalizzati
 alias stop='i3lock -e -f -i ~/Pictures/Sfondo'
 alias basta='shutdown 0'
-
+alias bluegestore='blueman-manager &'
