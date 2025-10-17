@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#you should put a file called .bashrc in your home directory, and copy the following lines as the content:
+# if [ -f ~/.config/bashrc ]; then
+#     source ~/.config/bashrc
+# fi
+
 # Colori personalizzati (usando i tuoi hex in versione ANSI approssimata)
 FG_PRIMARY="\[\e[38;2;240;198;116m\]"   # #F0C674
 FG_SECONDARY="\[\e[38;2;138;190;183m\]" # #8ABEB7
@@ -97,8 +102,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
-#alias vai= "./a.out" 		#non funge, però daje buona idea
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
